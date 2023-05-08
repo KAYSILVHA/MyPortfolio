@@ -86,17 +86,23 @@ body{
     display: flex;
     flex-direction: column;
     color: white;
-    margin: 200px 40px;
-    width: 500px;
+    margin: 180px 40px;
+    width: 700px;
     height: 300px;
     padding: 20px;
     border-radius: 20px;
+    line-height: 25px;
     
 }
 
 .profile h2{
     font-size: 32px;
-    padding: 30px 0;
+    padding: 10px 0;
+}
+
+.profile h3{
+    padding: 20px 0;
+    color: #ff2a8dd7;
 }
 
 .profile p{
@@ -114,6 +120,8 @@ body{
     padding: 20px;
     border: none;
     border-radius: 20px;
+    color: white;
+    font-weight: 700;
 }
 .resume button:hover{
     background-color: #a80953d7;
@@ -122,11 +130,6 @@ body{
     
 }
 
-.resume button a{
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-}
 
 /*About*/
 
@@ -157,7 +160,11 @@ body{
     color: #ffff;
 }
 
-
+.projects img{
+    border-radius: 20px;
+    border: 3px solid #ff2a8d;
+    padding: 5px;
+}
 .card-container {
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -265,7 +272,7 @@ body{
     flex-direction: column;
     color: aliceblue;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
     position: relative;
     
 }
@@ -273,13 +280,8 @@ body{
 .p-title{
     display: flex;
     justify-content: center;
-    font-size: 44px;
+    font-size: 35px;
     color: #ff2a8dd7;    
-}
-
-.p-title h2{
-    margin-bottom: 50px;
-    
 }
 
 .p-text{
@@ -311,6 +313,7 @@ body{
     text-align: center;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
     
 }
 
@@ -336,7 +339,7 @@ body{
 
 .s-title h2{
     color: white;
-    font-size: 32px;
+    font-size: 35px;
     margin-left: 200px;
     margin-bottom: 50px;
     display: flex;
@@ -350,7 +353,14 @@ body{
 }
 
 .s-description img{
-    width: 300px;
+    width: 500px;
+    border-radius: 20px;
+    border: 3px solid #ff2a8d;
+    padding: 5px;
+}
+
+.s-description img:hover{
+    filter: grayscale(100%);
 }
 .s-text{
     display: flex;
@@ -358,7 +368,12 @@ body{
     justify-content: center;
     width: 600px;
     padding: 30px 20px;
+    font-size: 24px;
     
+}
+
+.s-text span{
+    color: #ff2a8dd7;
 }
 
 /*Projects*/
@@ -396,14 +411,14 @@ section .resume{
 }
 
 .pr-title{
-    padding-top: 30px;
+    padding-top: 70px;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 .pr-title h2{
     color: white;
-    font-size: 32px;
+    font-size: 35px;
     margin-left: 200px;
     margin-bottom: 50px;
 }
@@ -417,16 +432,15 @@ section .resume{
     width: 100%;
     height: 600px; 
     color: white;
+    
 }
 .contact .icons {
     text-align: center;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
   }
- 
-  .contact img:active,
-  .contact img:hover  {
-    text-decoration: none;
-    box-shadow: 0px 0px 10px rgba(255,255,255,.5);
-  }
+
 
   .c-title {
     padding-top: 30px;
@@ -434,11 +448,19 @@ section .resume{
   
   .c-title h2{
     color: white;
-    font-size: 32px;
+    font-size: 35px;
     margin: 50px 0 50px 200px;
 }
 
 
-.contact img{
+.contact a img{
     width: 200px;
+    border-radius: 50%;
+    border: 3px solid #ff2a8d33;
+    transition: .5s ease-in-out;
+}
+
+.contact a img:hover{
+    width: 220px;
+    opacity: .8;
 }
